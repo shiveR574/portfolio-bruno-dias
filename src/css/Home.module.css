@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #C8C8A9;
+    background-color: #f3f3d6;
     padding: 50px;
 }
 
@@ -58,7 +58,7 @@
 .btn-home {
     position: relative;
     top: 20px;
-    right: 75px;
+    right: 87px;
     font-family: cursive;
 }
 
@@ -70,7 +70,6 @@ button {
     outline: none;
     color: white;
     padding: 10px 20px;
-
 }
 
 button:hover {

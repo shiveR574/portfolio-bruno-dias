@@ -9,6 +9,8 @@
     justify-content: flex-end; /* not just "right" */
     padding: 10px;
     background-color: #252525; /* gives it some contrast */
+    position: relative;
+    z-index: 10;
 }
 
 .navbar-links a {
@@ -26,11 +28,6 @@
 .navbar-links a:hover {
   color: #1f1f1f;
   background-color: rgba(219, 219, 219, 0.986);
-}
-
-.nav-link {
-  padding: 0.7rem 1.2rem;
-  border-radius: 4px;
 }
 
 /*max-width: 900px  → tablet layout  
