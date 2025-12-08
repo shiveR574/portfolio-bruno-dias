@@ -1,0 +1,141 @@
+.home-content {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(247, 247, 247, 0.986);
+    padding: 50px;
+}
+
+.home-left {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 40px;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+} 
+
+.text-wrapper {
+    text-align: left;
+    margin-right: -80px; /* keep your visual offset */
+    font-family: cursive;
+}
+
+.text-wrapper h1 {
+    margin: 0;
+    margin-bottom: -20px;
+    color: rgba(0, 0, 0, 0.801);
+    font-size: 45px;
+}
+
+.text-wrapper h3 {
+    margin: 0;
+    margin-top: 25px;
+    color: rgba(0, 0, 0, 0.801);
+    font-size: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.btn-home {
+    position: relative;
+    top: 20px;
+    right: 75px;
+    font-family: cursive;
+}
+
+button {
+    background-color: rgb(42, 116, 253);
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+button:hover {
+    background-color: rgb(115, 158, 252);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* .btn-home a {
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+} */
+
+/* ===== Tablet (max-width: 900px) ===== */
+@media (max-width: 900px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .home-left, .home-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .text-wrapper {
+        margin-right: 0;       /* remove negative spacing */
+        text-align: center;    /* center text on smaller screens */
+    }
+
+    .profile-image {
+        margin-left: 0;
+        width: 180px;
+        height: 180px;
+    }
+
+    .btn-home {
+        top: 10px;
+        right: 0;
+        position: relative;
+    }
+}
+
+/* ===== Mobile (max-width: 600px) ===== */
+@media (max-width: 600px) {
+    .text-wrapper h1 {
+        font-size: 32px;
+    }
+
+    .text-wrapper h3 {
+        font-size: 18px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    button {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+}
+

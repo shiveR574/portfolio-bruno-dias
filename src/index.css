@@ -1,0 +1,57 @@
+/* index.css - global styles for the whole app */
+
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font and background */
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #ffffff; /* light background for visibility */
+  color: #333333; /* default text color */
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #111111;
+}
+
+/* Links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #005fa3;
+}
+
+/* Buttons - optional global style */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+button:hover {
+  border-color: #0077cc;
+  background-color: #333;
+}
+
+
+
+

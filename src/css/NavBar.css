@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: flex-end; /* not just "right" */
+    padding: 10px;
+    background-color: #ffffff; /* gives it some contrast */
+}
+
+.navbar-links a {
+    /*margin-left: 10px;*/
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0.3rem 0.7rem; /* keep the same padding as hover */
+    border-radius: 4px;
+    display: inline-block; /* ensures padding works properly */
+    /*font-weight: bold;*/
+    font-family: cursive;
+}
+
+.navbar-links a:hover {
+  color: #1f1f1f;
+  background-color: rgba(247, 247, 247, 0.986);
+}
+
+.nav-link {
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+}
+
+/*max-width: 900px  → tablet layout  
+max-width: 600px  → normal mobile  
+max-width: 360px  → small mobile*/
+
+/* ===== Tablet (max-width: 900px) ===== */
+@media (max-width: 900px) {
+  .navbar-content {
+    justify-content: center;   /* center the navbar */
+    padding: 12px;
+  }
+
+  .navbar-links a {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;    /* slightly smaller padding */
+  }
+}
+
+/* ===== Mobile (max-width: 600px) ===== */
+@media (max-width: 600px) {
+  .navbar-content {
+    justify-content: center;
+    padding: 10px 5px;
+  }
+
+  .navbar-links {
+    gap: 5px;                  /* reduce spacing between items */
+  }
+
+  .navbar-links a {
+    font-size: 0.9rem;         /* smaller text */
+    padding: 0.35rem 0.6rem;   /* smaller button size */
+    font-family: cursive;
+  }
+}
+
+
+/* ===== Very small mobile (max-width: 360px) ===== */
+@media (max-width: 360px) {
+  .navbar-content {
+    justify-content: center;
+    padding: 8px 2px;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-wrap: nowrap;      /* prevents items from moving to next row */
+    gap: 2px;               /* minimal spacing */
+  }
+
+  .navbar-links a {
+    font-size: 0.75rem;     /* smaller text so everything fits */
+    padding: 0.25rem 0.4rem;/* small padding */
+  }
+}
+
+
+

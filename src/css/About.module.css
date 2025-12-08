@@ -1,0 +1,93 @@
+/* Container de toda a informação inicial */
+
+.about-content {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(247, 247, 247, 0.986);
+    padding: 50px;
+    position: relative;
+}
+
+/* Wrapper de todo o conteúdo (texto) da esquerda */
+
+.text-wrapper p {
+    position: absolute;
+    font-weight: bold;
+}
+
+.text-wrapper h1 {
+    font-size: 45px;
+    position: relative;
+    top: -117px;
+    left: -90px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    letter-spacing: 1px;
+    font-family: cursive;
+    /* font-weight: lighter; */
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 0px;
+}
+
+.highlight {
+    font-size: 45px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    color: rgb(255, 196, 0);
+    font-family: cursive;
+    /* color: white; */
+    margin-left: 2px;
+}
+
+/* Conteúdo de metade da direita */
+
+.right-content {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+}
+
+/* Images */
+
+.Leagueoflegends {
+    width: 160px;
+    height: 160px;
+    filter: saturate(1.6) contrast(1.1) brightness(1.05);
+    position: absolute;
+    top: -170px;
+    right: -35px;
+}
+
+.Valorant {
+    width: 160px;
+    height: 160px;
+    filter: saturate(1.6) contrast(1.1) brightness(1.05);
+    position: absolute;
+    top: -110px;
+    right: 125px;
+}
+
+.CS2 {
+    width: 160px;
+    height: 160px;
+    filter: saturate(1.6) contrast(1.1) brightness(1.05);
+    position: absolute;
+    mix-blend-mode: multiply;
+    right: -10px;
+    top: -13px;
+}
+
+
+
+
+
