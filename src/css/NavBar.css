@@ -8,14 +8,14 @@
     display: flex;
     justify-content: flex-end; /* not just "right" */
     padding: 10px;
-    background-color: #ffffff; /* gives it some contrast */
+    background-color: #252525; /* gives it some contrast */
 }
 
 .navbar-links a {
     /*margin-left: 10px;*/
     text-decoration: none;
     font-size: 0.9rem;
-    color: #333;
+    color: #f1f1f1;
     padding: 0.3rem 0.7rem; /* keep the same padding as hover */
     border-radius: 4px;
     display: inline-block; /* ensures padding works properly */
@@ -25,7 +25,7 @@
 
 .navbar-links a:hover {
   color: #1f1f1f;
-  background-color: rgba(247, 247, 247, 0.986);
+  background-color: rgba(219, 219, 219, 0.986);
 }
 
 .nav-link {
